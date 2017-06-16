@@ -22,12 +22,16 @@ var rtm = new RTM(endpoint, appkey, {
 
 var subscription = rtm.subscribe(channel, RTM.SubscriptionMode.SIMPLE);
 
+var subscribed = false;
 subscription.on("enter-subscribed", function() {
-    events();
-    comments();
-    photos();
-    open_events();
-    open_venues();
+    if (!subscribed) {
+        subscribed = true;
+        events();
+        comments();
+        photos();
+        open_events();
+        open_venues();
+    }
 });
 
 rtm.start();
