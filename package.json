@@ -1,0 +1,20 @@
+{
+    "name": "satori-meetup",
+    "version": "0.0.1",
+    "description": "Will update Satori.com meetup Open Data channel with the latest rsvps, events, comments, photos and so on",
+    "main": "main.js",
+    "dependencies": {
+        "satori-sdk-js": "^1.0.1",
+        "ws": "^3.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Llorx/satori-meetup.git"
+    },
+    "author": "Llorx",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Llorx/satori-meetup/issues"
+    },
+    "homepage": "https://github.com/Llorx/satori-meetup#readme"
+}
